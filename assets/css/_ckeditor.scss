@@ -1,0 +1,97 @@
+.ckeditorBlock {
+  ul {
+    list-style-type: circle;
+    padding-left: 15px;
+  }
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 15px;
+  }
+  a {
+    color: $secondaryclr;
+  }
+}
+.bottomDetailBlock {
+  ul {
+    columns: 4;
+    @media (max-width: 450px) {
+      columns: 1;
+    }
+    @media (min-width: 451px) and (max-width: 650px) {
+      columns: 2;
+    }
+    @media (min-width: 651px) and (max-width: 991px) {
+      columns: 3;
+    }
+    li a:hover {
+      color: $secondaryclr;
+    }
+  }
+}
+.disclaimerBlock {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-size: 18px;
+  }
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.staticContentType {
+  ul {
+    padding-left: 15px;
+    list-style-type: circle;
+  }
+  h2,
+  h3,
+  .p-heading {
+    font-size: 16px;
+    margin-top: 25px;
+    border-left: 3px solid $primaryclr;
+    background-color: #f6f6f6;
+    padding: 10px;
+  }
+  h4,
+  h5,
+  h6 {
+    margin-top: 18px;
+  }
+}
+.listflex {
+  li {
+    flex: 0 0 25%;
+    max-width: 25%;
+    @media (max-width: 350px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    @media (min-width: 351px) and (max-width: 650px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    @media (min-width: 651px) and (max-width: 950px) {
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+    }
+  }
+}
+.content-ckeditor {
+  .content-ckeditor-hide {
+    display: none;
+  }
+  .ckeditor-btn {
+    text-decoration: underline;
+    color: $linkclr;
+    &:hover {
+      color: $secondaryclr;
+    }
+  }
+}

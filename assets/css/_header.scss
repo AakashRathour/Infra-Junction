@@ -1,0 +1,337 @@
+.headerMain {
+  background-color: #fff;
+  box-shadow: 0 3px 6px 0 rgba(36, 39, 44, 0.1);
+  .headerMain-top {
+    padding: 5px 0 3px;
+    nav.navbar {
+      padding: 0px;
+      .navbar-brand {
+        padding: 0;
+        @media (max-width: 991px) {
+          padding-left: 32px;
+        }
+        img {
+          width: 115px;
+          height: auto;
+          @media (max-width: 767px) {
+            max-width: 100px;
+          }
+        }
+      }
+      .mobileMenubarIcons {
+        margin-top: 4px;
+        .webLangOptionMobile {
+          width: 32px;
+          font-family: $boldfont;
+          height: 32px;
+          border: 1px solid #333;
+          color: #333;
+          display: inline-block;
+          border-radius: 50%;
+          font-size: 12px;
+          padding-top: 3.5px;
+          position: relative;
+          top: -3px;
+          text-align: center;
+          &:before {
+            position: absolute;
+            display: inline-block;
+            right: -3px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            margin-left: 0.255em;
+            vertical-align: 0.255em;
+            content: "";
+            border-top: 0.3em solid;
+            border-right: 0.3em solid transparent;
+            border-bottom: 0;
+            border-left: 0.3em solid transparent;
+            z-index: 1;
+          }
+          &:after {
+            background: #fff;
+            width: 11px;
+            height: 11px;
+            position: absolute;
+            content: "";
+            top: 50%;
+            transform: translateY(-50%);
+            box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+            right: -5px;
+            border-radius: 50%;
+          }
+        }
+        .navbar-toggler {
+          position: absolute;
+          left: 0;
+          top: 8px;
+        }
+        .searchTractorsbtn {
+          margin-right: 5px;
+          span {
+            font-family: $boldfont;
+            img {
+              width: 12px;
+              position: relative;
+              top: -1px;
+            }
+          }
+        }
+      }
+      .navbar-toggler {
+        background: transparent;
+        border-radius: 0px;
+        padding: 0;
+        margin-top: 3px;
+        .icon-bar {
+          width: 22px;
+          height: 2px;
+          background-color: $primaryclr;
+          display: block;
+          margin: 4px 0;
+        }
+      }
+      .navbar-nav {
+        .nav-item {
+          margin: 0;
+          .nav-link {
+            font-family: $boldfont;
+            text-transform: uppercase;
+            font-size: 13px;
+            color: $bodyclr;
+            opacity: 0.85;
+            line-height: 60px;
+            padding: 0 0.5rem;
+            @media (max-width: 991px) {
+              border-bottom: 1px solid #eee;
+              line-height: 45px;
+              padding: 0 15px;
+              font-size: 12.4px;
+            }
+            @media (min-width: 992px) and (max-width: 1150px) {
+              text-transform: capitalize;
+              padding: 0 0.3rem;
+            }
+            &:hover {
+              color: $linkclr;
+            }
+          }
+          &.dropdown {
+            .dropdown-menu {
+              border-radius: 0;
+              border: 0;
+              border-top: 2px solid $primaryclr;
+              padding: 0;
+              margin-top: 0;
+              .dropdown-item {
+                padding: 10px 10px 10px 12px;
+                font-size: 14px;
+                border-bottom: 1px solid rgba(36, 39, 44, 0.1);
+                transition: 0.3s ease-in-out;
+                &:visited{
+                  background-color: #eeeeee;
+                  color:#000000;
+                  
+                }
+              }
+              li {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+      .mobileBlockMenuSecondNav {
+        .webLangOption {
+          .nav-link {
+            text-transform: unset;
+          }
+          span {
+            border: 1px solid rgba(36, 39, 44, 0.3);
+            padding: 7px 20px 7px 10px;
+            border-radius: 2px;
+          }
+          .dropdown-toggle {
+            &:after {
+              position: absolute;
+              right: 15px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+        .userOptionsTop {
+          opacity: 1;
+          .userOptions {
+            background: $linkclr;
+            padding: 8px;
+            border-radius: 50%;
+            color: #fff;
+            font-weight: 700;
+          }
+        }
+        .searchTractorsbtn,
+        .loginBtn {
+          span {
+            border: 1px solid rgba(36, 39, 44, 0.3);
+            padding: 7px 10px 7px 10px;
+            border-radius: 2px;
+            img {
+              width: 12px;
+              position: relative;
+              top: -1px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .headerMain-bottom {
+    border-top: 1px solid rgba(36, 39, 44, 0.1);
+    white-space: nowrap;
+    overflow-x: auto;
+
+    .headerMain-bottomLinks {
+      display: inline-block;
+      line-height: 42px;
+      margin-right: 0.8rem;
+      font-family: $boldfont;
+      text-transform: uppercase;
+      font-size: 12.5px;
+      position: relative;
+      opacity: 0.85;
+      @media (max-width: 991px) {
+        font-size: 12.2px;
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $primaryclr;
+        transition: 0.1s ease-in-out;
+      }
+      &:hover{
+        color: $linkclr;
+      }
+      &:hover {
+        &:before {
+          width: 100%;
+          background-color: $linkclr;
+          transition: 0.1s ease-in-out;
+          color: $linkclr;
+        }
+      }
+    }
+  }
+}
+/* menu */
+.nav-slider.toggling {
+  transition: transform 0.35s, opacity 0.35s;
+}
+@media (max-width: 991px) {
+  .nav-slider {
+    opacity: 0;
+    position: fixed;
+    z-index: 200;
+    background: #fff;
+  }
+
+  body.has-active-menu {
+    overflow: hidden;
+  }
+
+  .nav-mask {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.25s, width 0s 0.25s, height 0s 0.25s;
+  }
+
+  .has-active-menu .nav-mask {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 0.25s;
+  }
+
+  .nav-slider {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+  }
+
+  .has-active-menu .nav-slider {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@media (min-width: 320px) and (max-width: 991px) {
+  .nav-slider {
+    width: 300px;
+    transform: translateX(-300px);
+  }
+}
+@media (max-width: 991px) {
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        padding: 7px 15px;
+      }
+     
+    }
+  }
+  .mobileBlockMenuSecondNav {
+    display: none;
+  }
+}
+.mobileBlockMenu-top {
+  background: #f2f2f2;
+  padding: 25px 10px;
+  img {
+    width: 115px;
+  }
+}
+.mobileBlockMenu-bottom {
+  ul {
+    li {
+      a {
+        text-align: center;
+        display: block;
+        padding: 12px 8px;
+        &.selltractormobile {
+          background: $primaryclr;
+          color: #fff;
+        }
+        &.buytractormobile {
+          background: $secondaryclr;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.dropdown-menu .dropdown .dropdown-menu {
+  left: 100%;
+  top: -2px;
+}
+.newTag {
+  background-color: $primaryclr;
+  font-size: 12px;
+  padding: 1px 5px 2px;
+  border-radius: 2px;
+  margin-left: 3px;
+}

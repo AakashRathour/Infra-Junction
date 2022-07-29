@@ -1,0 +1,138 @@
+.filterBlock {
+  .filterBlock-chips {
+    display: block;
+    background-color: #fff;
+    text-transform: capitalize;
+    padding: 10px 5px;
+    @include oneline;
+    border-radius: 25px;
+    margin: 6px 0 10px;
+    &:hover {
+      background-color: $secondaryclr;
+      color: $primaryclr;
+    }
+  }
+}
+.sliderBlock-filterHome {
+  max-width: 380px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 4px;
+  padding: 20px 20px 15px;
+  @media (max-width: 1150px) {
+    position: unset;
+    transform: unset;
+    max-width: unset;
+    border-radius: 0;
+  }
+  h1 {
+    text-align: center;
+    font-size: 18px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .filterHome-inner {
+    .nav-tabs {
+      border-bottom: 0;
+      background-color: #ddd;
+      .nav-link {
+        border: 0;
+        background-color: #ddd;
+        padding: 9px 10px;
+        border-radius: 0;
+        font-family: $boldfont;
+        width: 50%;
+        text-align: center;
+        &:hover {
+          color: $secondaryclr;
+        }
+        &.active {
+          background-color: $secondaryclr;
+          color: $primaryclr;
+        }
+      }
+    }
+  }
+}
+.truckFilterBlock {
+  .truckFilterBlock-btns {
+    background-color: #f6f6f6;
+    padding: 12px 0 6px;
+  }
+  .truckFilterBlock-inner {
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 0 !important;
+    &:last-child {
+      border-bottom: 0;
+    }
+    h3 {
+      background-color: #fff !important;
+    }
+    .accordionBlock-body {
+      padding-top: 5px !important;
+      max-height: 280px;
+      overflow-y: auto;
+    }
+  }
+  @media (max-width: 991px) {
+    display: none;
+  }
+  &.truckFilterBlock-mobile {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 99;
+    height: 100vh;
+    overflow-y: auto;
+  }
+}
+.listingpage-info {
+  .sectionHeading {
+    margin-bottom: 0;
+    h2,
+    h3,
+    h4 {
+      margin: 6px 0 0 0;
+    }
+  }
+  .form-control {
+    height: 35px;
+    line-height: 35px;
+    border: 0;
+    background-color: #f6f6f6;
+  }
+}
+.filterBtns-mobile {
+  background-color: #fff;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 275px;
+  width: 100%;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+  a {
+    width: 49%;
+    display: inline-block;
+    padding: 10px 0;
+    border-right: 1px solid #ddd;
+    &:last-child {
+      border-right: 0;
+    }
+    img {
+      width: 13px;
+    }
+  }
+}

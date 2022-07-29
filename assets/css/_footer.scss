@@ -1,0 +1,83 @@
+.footerMain {
+  background-color: $secondaryclr;
+  .footerMain-tjbranding {
+    padding: 15px 0;
+    .tjbrandinglogo {
+      opacity: 0.8;
+      height: 35px;
+      margin: 0 auto;
+    }
+  }
+  .footerMain-info {
+    padding: 20px 0;
+    border-top: 1px solid rgba(240, 240, 240, 0.149);
+    border-bottom: 1px solid rgba(240, 240, 240, 0.149);
+    .footerMain-infoInner {
+      @media (max-width: 767px) {
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      p,
+      a,
+      ul {
+        color: $footerlink;
+         li a:hover {
+          color: $linkclr;
+        }
+      }
+      .footerMain-contactInfo {
+        li {
+          img {
+            width: 16px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  .footerMain-copyright {
+    padding: 12px 0;
+    .footerMain-copyrightLine {
+      color: $offwhitetext;
+      margin-bottom: 0;
+      @media (max-width: 767px) {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    }
+    .footerMain-copyrightLinks {
+      text-align: right;
+      @media (max-width: 767px) {
+        text-align: center;
+      }
+      a {
+        color: $offwhitetext;
+        margin-right: 5px;
+        @media (max-width: 767px) {
+          font-size: 12px;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        &:hover {
+          color: $linkclr;
+        }
+      }
+    }
+  }
+}
+.footerMain-infoTitle,
+h5 {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.gplay {
+  width: 115px;
+}
+.footerMain-pageLinks li a {
+  display: block;
+  line-height: 28px;
+}

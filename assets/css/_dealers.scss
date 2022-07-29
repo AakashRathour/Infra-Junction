@@ -1,0 +1,25 @@
+.dealerBlock-inner{
+    h3,h4,.dealer-name{
+        background-color: $linkclr;;
+        font-size: 15px;
+        padding: 10px 15px;
+        margin-bottom: 0;
+        @include oneline;
+    }
+    .dealer-inner-content{
+        padding: 12px 15px 8px;
+        .dealerBlock-location{
+            @include twoline;
+        }
+        p{
+            margin-bottom: 5px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            img{
+                width: 13px;
+                margin-right: 3px;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.sliderBlock{
+    position: relative;
+    height: 400px;
+    .carousel-control-prev,.carousel-control-next{
+        width: auto;
+        opacity: 0.9;
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: unset;
+        background-color: $secondaryclr;
+        height: 50px;
+        padding: 0 2px; 
+        @media (max-width:800px){
+            height: 35px;
+        }
+        &:hover{
+            opacity: 1;
+        }
+        .carousel-control-prev-icon{
+            background-image: url('../images/icons/left-arrow.svg');
+            filter: invert(100%);
+        }
+        .carousel-control-next-icon{
+            background-image: url('../images/icons/right-arrow.svg');
+            filter: invert(100%);
+        }
+    }
+    .carousel-control-prev{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .carousel-control-next{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    &.sliderBlockHeight{
+        height: auto;
+    }
+}

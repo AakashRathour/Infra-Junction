@@ -1,0 +1,19 @@
+.contactInfo{
+    padding: 20px 10px;
+    border-bottom: 1px solid $linkclr;
+    .contactInfo-icon{
+        background-color: $linkclr;
+        width: 50px;
+        padding: 10px;
+        border-radius: 2px;
+        margin: 0 auto 15px;
+    }
+}
+.gMap{
+    iframe{
+        width: 100%;
+        height: 350px;
+        padding: 10px 10px 5px;
+        border-radius: 3px;
+    }
+}

@@ -1,0 +1,46 @@
+.accordionBlock{
+    .accordionBlock-inner{
+        border-radius: 3px;
+        margin-bottom: 20px;
+        .accordionBlock-header{
+            h2,h3{  
+                background: #f6f6f6;
+                padding: 15px 35px 15px 15px;
+                margin: 0;
+                font-size: 14px;
+                text-transform: uppercase;
+                position: relative;
+                @media (max-width:767px){
+                    text-transform: unset;
+                }
+                &:before{
+                    position: absolute;
+                    content: '';
+                    right: 15px;
+                    top:17px;
+                    width: 13px;
+                    height: 13px;
+                    background-image: url('../images/icons/minus.svg');
+                    background-size: 13px;
+                }
+                &[aria-expanded="false"]{
+                    &:before{
+                        background-image: url('../images/icons/plus.svg');
+                    }
+                }
+            }
+        }
+        .accordionBlock-body{
+            padding: 12px 15px;
+            p,h4{
+                font-size: 14px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

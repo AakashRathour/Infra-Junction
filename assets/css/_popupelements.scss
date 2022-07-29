@@ -1,0 +1,179 @@
+.langMobileBlock{
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 9999;
+    width: 100%;
+    display: none;
+    .langMobileBlockClose{
+        position: absolute;
+        right: 15px;
+        top:15px;
+        z-index: 9999;
+        img{
+            width: 32px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .langMobileBlockInner{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background:#fff;
+        ul{
+            li{
+                border-bottom: 1px solid #ddd;
+                font-size: 15px;
+                a{
+                    padding:10px;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.fixedsearchbar{
+    position: fixed;
+    height: 100vh;
+    width:100%;
+    z-index: 9;
+    top: 0;
+    display: none;
+    background: #f6f6f6;
+    .fixedsearchbar-form{
+        background:#fff;
+        padding: 40px 20px 20px;
+        max-width: 600px;
+        width:100%;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        max-height: 100vh;
+        .fixedsearchbar-heading{
+            font-size: 18px;
+        }
+        .fixedsearchbar-close{
+            img{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                filter: invert(100%);
+                max-width: 30px;
+            }
+            &:hover{
+                cursor: pointer;
+                opacity: 1;
+                transition: .3s ease-in-out;
+            }
+        }
+        form{
+            input{
+                width: 80%;
+                float: left;
+                @media (max-width:550px){
+                    width: 70%;
+                }
+            }
+            button{
+                width: 20%;
+                @media (max-width:550px){
+                    width: 30%;
+                }
+            }
+        }
+        .fixedsearchbar-results{
+            background: #fff;
+            text-align: left;
+            max-height: 450px;
+            overflow-y: auto;
+            display: none;
+            .fixedsearchbar-resultsList{
+                margin-top: 20px;
+                p{
+                    background-color: #f6f6f6;
+                    padding: 6px 12px;
+                    text-transform: uppercase;
+                }
+                ul{
+                    list-style-type: circle;
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+}
+.customModal{
+    padding: 15px;
+    .customModal-body{
+        .uploadImgBlock-popup{
+            .attachment-file{
+                height: 150px;
+                @media (max-width:767px){
+                    height: 125px;
+                }
+            }
+        }
+    }
+    .modal-dialog{
+        max-width: 550px;
+        width: 100%;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%)!important;
+    }
+    .modal-content{
+        border: 0;
+        border-radius: 0;
+        background-image: url('../images/banners/modalbg.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+        padding: 15px 20px;
+    }
+    .close{
+        padding: 0;
+        opacity: 1;
+        background-color: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin: -10px -15px -10px auto;
+        img{
+            width: 23px;
+        }
+    }
+    .modalHeading{
+        font-size: 17px;
+        &.modalHeading-success{
+            font-size: 22px;
+        }
+    }
+    &.popupPromotional{
+        .modal-dialog{
+            max-width: 480px;
+        }
+        .video-ad-popup{
+            max-width: 600px;
+        }
+    }
+}
+.itotyText {
+    font-family: $boldfont;
+    font-size: 15.5px!important;
+    animation-name: flashItoty;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    position: relative;
+    top: 1px;
+}
+@keyframes flashItoty {
+    from {color:#333;}
+    to {color:$primaryclr;}
+}

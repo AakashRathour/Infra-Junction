@@ -1,0 +1,155 @@
+.compareBlock {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  white-space: nowrap;
+  .compareBlock-main {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    @media (max-width: 1150px) {
+      flex: none;
+      max-width: none;
+      width: 320px;
+    }
+  }
+}
+.vsBlock {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "VS";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: $secondaryclr;
+    text-align: center;
+    font-family: $boldfont;
+    color: #fff;
+    border-radius: 50%;
+    padding-top: 14px;
+    font-size: 18px;
+  }
+}
+.compareBlock-inner {
+  margin: 1px 0;
+  background-color: #FFFFFF;
+  .compareBlock-img {
+    position: relative;
+    display: flex;
+    &::before {
+      position: absolute;
+      content: "VS";
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+      width: 35px;
+      height: 35px;
+      background-color: $secondaryclr;
+      text-align: center;
+      font-family: $boldfont;
+      color: #fff;
+      border-radius: 50%;
+      padding-top: 6px;
+    }
+    .compareBlock-left,
+    .compareBlock-right {
+      width: 50%;
+      display: inline-block;
+      p {
+        margin: 8px 0 0 0;
+        padding: 0 12px;
+        @include oneline;
+      }
+    }
+    .comparisonImg {
+      height: 130px;
+      width: 100%;
+      @media (max-width: 1150px) {
+        height: 100px;
+      }
+    }
+  }
+  .compareBlock-content {
+    padding: 7px 12px 12px;
+  }
+  &:hover {
+    .compareBlock-btn {
+      background-color: $primaryclr;
+      color: #393939;
+    }
+  }
+}
+.startCompare {
+  .startCompare-inner {
+    margin: 1px 0;
+    padding-top: 12px;
+    .addTruck-title {
+      font-size: 18px;
+    }
+    .startCompare-img {
+      background-color: #fff;
+      text-align: center;
+      position: relative;
+      padding: 10px 0;
+      img {
+        height: 160px;
+        @media (max-width: 1150px) {
+          height: 140px;
+        }
+      }
+    }
+    .startCompare-form {
+      background-color: #f6f6f6;
+      padding: 15px;
+    }
+  }
+}
+.compareResult {
+  .accordionBlock-inner {
+    .accordionBlock-header {
+      h3 {
+        background-color: $darkcolor !important;
+        color: $secondaryclr;
+        &::before {
+          filter: invert(100%);
+        }
+      }
+    }
+    .accordionBlock-body {
+      .compareResult-inner {
+        border: 1px solid #ddd;
+        border-top: 0;
+        padding: 10px;
+        &:nth-child(2n) {
+          background-color: #f6f6f6;
+        }
+        .compare-property {
+          margin-bottom: 15px !important;
+          font-size: 15px;
+          @media (max-width: 991px) {
+            text-align: center;
+            margin-bottom: 10px !important;
+            font-size: 14px;
+          }
+        }
+        .col-6 {
+          .compare-value {
+            font-size: 15px;
+            @media (max-width: 991px) {
+              font-size: 13px;
+            }
+          }
+          &:last-child {
+            p {
+              @media (max-width: 991px) {
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.sellTruckForm{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+    top: 0;
+    padding: 15px;
+    background-image: url('../images/banners/commonbg.jpg');
+    background-color: #E3EBF6;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    .sellTruckForm-inner{
+        background: #fff;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        border-radius: 3px;
+        .sellTruckForm-header{
+            background-color: #f6f6f6;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            padding: 12px 0 7px;
+            .sellTruckForm-selectedStep{
+                white-space: nowrap;
+                overflow-x: auto;
+                a{
+                    background-color: #fff;
+                    display: inline-block;
+                    width: 70px;
+                    margin-right: 5px;
+                    font-size: 12px;
+                    padding: 2px 10px;
+                    text-align: center;
+                    border-radius: 20px;
+                    @include oneline;
+                }
+            }
+        }
+    }
+}
+.uploadImgBlock{
+    .uploadImg{
+        height: 70px;
+        background-image: url('../images/icons/imagebg.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border:1px solid #ddd;
+        background-position:center center;
+    }
+}
+.sellTruckForm-iconImg{
+    width: 25px;
+}
+.sellTruckForm-content{
+    min-height: 350px;
+    max-height: 550px;
+    overflow-y: auto;
+    .sellTruckForm-contentInner{
+        h3{
+            padding: 10px 15px;
+            background-color: $primaryclr;
+            color: #fff;
+            margin-bottom: 0;
+            font-size: 15px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 9;
+        }
+        .sellTruckForm-options{
+            display: block;
+            border-bottom: 1px solid #eee;
+            padding: 10px 15px;
+            &:last-child{
+                border-bottom: 0;
+            }
+        }
+    }
+}
+.uploadImgBlock-popup{
+    padding: 0 8px;
+    p{
+        font-size: 12px;
+    }
+    .attachment{
+        display: block;
+        input[type='file']{
+            display: none;
+        }
+        .attachment-file {
+            position: relative;
+            z-index: 1;
+            height: 80px;
+            border: 1px solid #ddd;
+            &:hover{
+                cursor: pointer;
+            }
+            .attachment-actions{
+                background-image: url('../images/icons/imagebg.svg');
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+            .attachment-preview {
+                width: 100%;
+                height: 100%;
+                opacity: 0.9;
+                top: 0;
+                left: 0;
+                position: absolute;
+                background-size: cover;
+                background-position: center center;
+            }
+        }
+    }   
+}
+.sellTruckForm-priceInfo{
+    padding: 16px;
+    h4{
+        background-color: #f6f6f6;
+        font-size: 17px;
+        padding: 10px 0;
+        text-align: center;
+    }
+    p{
+        font-size: 10px;
+    }
+}
+.aadharFront{
+    background-image: url('../images/aadharfront.jpg')!important;
+}
+.aadharBack{
+    background-image: url('../images/aadharback.jpg')!important;
+}

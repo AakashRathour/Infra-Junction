@@ -1,0 +1,50 @@
+.tableParent{
+    overflow-x: auto;
+    max-width: 100%;
+}
+.tableBlock,table{
+    background-color: #fff;
+    width: 100%!important;
+    thead{
+        background-color: $primaryclr;
+        tr{
+            th{
+                color: #fff;
+                padding: 12px 12px;
+                border: 1px solid #ddd;
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                padding: 12px 12px;
+                border: 1px solid #ddd;
+                a{
+                    h5{
+                        color: $linkclr;
+                        &:hover{
+                           color:$secondaryclr;
+                        }
+                    }
+                }
+            }
+            &:nth-child(2n+1){
+                background-color: #f6f6f6;
+            }
+        }
+    }
+}
+.tableHeight{
+    max-height: 283px;
+    overflow-y: auto;
+}
+.tableHeightcareer{
+    max-height: auto;
+    overflow-y: auto;
+}
+.variantsTable​{
+    @media (max-width:991px){
+        margin-bottom: 15px!important;
+    }
+}

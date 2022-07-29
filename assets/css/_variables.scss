@@ -1,0 +1,25 @@
+// $primaryclr: #ffbc13;
+$primaryclr: #ffd957;
+$lightblue: #d4e9fa;
+$secondaryclr: #1a1a1a;
+$btntext:#393939;
+$linkclr: #ffbc13;
+$darkcolor:#f6c427;
+$bodyclr: #4b4b4b;
+$lightfont: TJ-regular;
+$boldfont: TJ-bold;
+$premiumclr: #ffbf69;
+$footerlink:#959595;
+$offwhitetext: rgba(255, 255, 255, 0.8);
+
+@mixin oneline {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@mixin twoline {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
